@@ -1,3 +1,112 @@
-//====================================================================================================
+.footer {
+  padding: rem(40) 0 rem(44);
+  @media (max-width: em(600)){
+    padding: rem(25) 0 rem(25);
+  }
+  // .footer__container
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: rem(40);
+    @media (max-width:$mobile){
+       grid-template-columns: repeat(2, 1fr); 
+       row-gap: rem(40);
+    }
+    @media (max-width: em(600)){
+        grid-template-columns: 1fr;
+        row-gap: rem(25);
+    }
+  }
+  // .footer__block
+  &__block {
+    &:nth-child(1) {}
+    &:nth-child(2) {}
+    &:nth-child(3) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  // .footer__logo
+  &__logo {
+    display: inline-block;
+    img {
+      height: auto;
+      @include adaptiveValue("width", 177, 60);
+    }
+    &:not(:last-child) {
+      margin-bottom: rem(16);
+    }
+  }
+  // .footer__help
+  &__help {
+    max-width: rem(323);
+    color: $black-1F2;
 
-//====================================================================================================
+    font-weight: 400;
+    @include adaptiveValue("font-size", 16, 14);
+    line-height: calc(24/16);
+
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 27, 16);
+    }
+  }
+  // .footer__copy
+  &__copy {
+    font-weight: 400;
+    font-size: rem(12);
+    line-height: calc(16/12);
+    color: #888D9F;
+  }
+  // .footer__menu
+  &__menu {
+  }
+  // .footer__btn
+  &__btn {
+    background-color: $blue-008AF5;
+    color: #ffffff;
+    max-width: rem(400);
+    padding: rem(16) rem(48);
+    &:first-child {
+      @include adaptiveValue("margin-bottom", 23, 16);
+    }
+  }
+	// .footer__lang
+	&__lang {
+    display: inline-flex;
+    align-items: center;
+    gap: rem(4);
+    @include adaptiveValue("margin-top", 36, 16);
+	}
+}
+
+.menu-footer {
+  // .menu-footer__list
+  &__list {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: rem(40);
+    row-gap: rem(24);
+    @media (max-width: em(600)){
+        grid-template-columns: repeat(5, auto);
+        column-gap: rem(10);
+    }
+  }
+  // .menu-footer__item
+  &__item {
+  }
+  // .menu-footer__link
+  &__link {
+    font-weight: 500;
+    @include adaptiveValue("font-size", 16, 14);
+    line-height: calc(24/16);
+    color: $black-1F2;
+    transition: all 0.3s ease;
+    @media (any-hover: hover){
+      &:hover{
+        opacity: 0.8;
+      }
+    }
+  }
+}
+

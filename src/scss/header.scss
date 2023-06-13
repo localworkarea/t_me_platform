@@ -1,12 +1,204 @@
-//====================================================================================================
+.header {
+	padding: rem(12) 0;
+	position: fixed;
+	width: 100%;
+	height: rem(80);
+	color: white;
+	z-index: 10;
+	display: flex;
+	align-items: center;
 
-//====================================================================================================
+	transition: background-color 0.45s ease 0s;
+	@media (max-width:$mobile){
+		 height: rem(50); 
+	}
+	&._header-scroll {
+		background-color: rgba(21, 27, 38, 0.95);
+	}
+	.page-platform & {
+		background-color: $blue-008AF5;
+	}
+	// .header__container
+	&__container {
+		display: flex;
+		align-items: center;
+		.page-main & {
+			@include adaptiveValue("column-gap", 86, 40, 0, 1920, 1440);
+			width: 68%;
+    	@media (max-width: em(1300)){
+    	    width: 80%;
+    	}
+    	@media (max-width: em(1100)){
+    	    width: 90%;
+					justify-content: space-between;
+    	}
+    	@media (max-width: em(900)){
+    	    width: 100%;
+    	}
+		}
 
-//Burger
-/*
+		.page-platform & {
+			width: 100%;
+			column-gap: rem(54);
+			@media (max-width: em(1100)){
+				  justify-content: space-between;
+			}
+		}
+	}
+	// .header__logo
+	&__logo {
+		position: relative;
+		z-index: 5;
+		img {
+			width: rem(101);
+			height: auto;
+			@media (max-width:$mobileSmall){
+				 width: rem(60); 
+			}
+			.page-platform & {
+				width: rem(68);
+			}
+		}
+	}
+	// .header__menu
+	&__menu {
+	}
+	// .header__buttons
+	&__buttons {
+		
+		.page-platform & {
+			display: flex;
+			column-gap: rem(24);
+			@media (max-width: em(1100)){
+				  flex-direction: column;
+					align-items: center;
+					row-gap: rem(24);
+			}
+		}
+	}
+	// .header__btn
+	&__btn {
+		width: max-content;
+		padding: rem(16) rem(48);
+
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 24px;
+		.page-platform & {
+			background-color: white;
+			color: $blue-008AF5;
+		}
+
+		&_chanel {
+			display: none;
+			.page-platform & {
+				display: flex;
+			}
+		}
+	}
+}
+
+.menu {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	column-gap: rem(48);
+	@media (max-width: em(1100)){
+		  position: fixed;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 100%;
+			background-color: #151B26;
+			padding: rem(20);
+
+			flex-direction: column;
+			justify-content: center;
+			row-gap: rem(25);
+
+			overflow-y: auto;
+			transition: all 0.5s ease-in-out;
+			.page-platform & {
+				background-color: $blue-008AF5;
+			}
+	}
+	.menu-open & {
+		@media (max-width: em(1100)){
+			  left: 0;
+		}
+	}
+	// .menu__body
+	&__body {
+	}
+	// .menu__list
+	&__list {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+		column-gap: rem(10);
+		@include adaptiveValue("column-gap", 48, 30, 0, 1920, 1440);
+
+		@media (max-width: em(1100)){
+			  flex-direction: column;
+				row-gap: rem(25);
+		}
+		@media (max-width:$mobileSmall){
+			 row-gap: rem(15); 
+		}
+
+		.page-platform & {
+			column-gap: rem(24);
+		}
+	}
+	// .menu__item
+	&__item {
+	}
+	// .menu__link
+	&__link {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: calc(24/16);
+		color: #ffffff;
+
+		transition: all 0.3s ease;
+		@media (any-hover: hover){
+			&:hover{
+				color: #d3d3d3;
+			}
+		}
+
+		@media (max-width: em(1100)){
+			  font-size: rem(42);
+		}
+		@media (max-width:$mobileSmall){
+			 font-size: rem(28); 
+		}
+	}
+	// .menu__wrapper
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		column-gap: rem(24);
+
+		@media (max-width: em(1100)){
+			  flex-direction: column-reverse;
+				row-gap: rem(25);
+		}
+	}
+	// .menu__lang
+	&__lang {
+	}
+	// .menu__icon
+	&__icon {
+	}
+}
+
+//Burger =================================
 .icon-menu {
 	display: none;
-	@media (max-width: $mobile) {
+	@media (max-width: 1100px) {
 		display: block;
 		position: relative;
 		width: rem(30);
@@ -24,7 +216,7 @@
 			position: absolute;
 			width: 100%;
 			height: rem(2);
-			background-color: #000;
+			background-color: #ffffff;
 		}
 		&::before {
 			top: 0;
@@ -53,4 +245,4 @@
 		}
 	}
 }
-*/
+
