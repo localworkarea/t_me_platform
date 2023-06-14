@@ -1,10 +1,41 @@
-<div id="popup" aria-hidden="true" class="popup">
+<div id="chanel" aria-hidden="true" class="popup">
 	<div class="popup__wrapper">
 		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрити</button>
-			<div class="popup__text">
-				Text
-			</div>
+			<h3 class="popup__title">Додати канал</h3>
+			<p class="popup__sub-title">Якщо ви не знайшли свій канал на сайті — скористайтесь формою, щоб додати його</p>
+			<form data-dev data-popup-message="#form-message" action="#" method="POST" class="form">
+				<input type="text" name="form[]" placeholder="Посилання на канал" class="form__input input" data-placeholder-nohide required>
+				<div class="form__select">
+					<div class="form__select-nam">Категорія каналу</div>
+					<select name="form[category]" data-class-modif="form" data-scroll>
+						<option value="1" selected></option>
+						<option value="2">Новини і ЗМІ</option>
+						<option value="3">Технології</option>
+						<option value="4">Економіка</option>
+						<option value="5">Гумор та розваги</option>
+						<option value="6">Криптовалюти</option>
+						<option value="7">Політика</option>
+						<option value="8">Маркетинг, PR</option>
+					</select>
+					<img class="form__select-img" src="@img/platform/arrow-gray.svg" alt="arrow">
+				</div>
+				<div class="form__item">
+					<label for="formContact" class="form__lable">Вкажіть ваш контакт в Telegram</label>
+					<input id="formContact" type="text" name="form[]"  placeholder="@your_contact" class="form__input input" data-placeholder-nohide required>
+				</div>
+				<button type="submit" class="form__button">Send</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div id="form-message" aria-hidden="true" class="popup popup-massage">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<img class="popup__img" src="@img/home/hand-ok.svg" alt="img">
+			<h3 class="popup__title">Канал відправлено<br> на модерацію</h3>
+			<p class="popup__sub-title">Якщо ви не знайшли свій канал на сайті — скористайтесь формою, щоб додати його</p>
+			<a href="index.html" class="form__button">Повернутися на головну (5)</a>
 		</div>
 	</div>
 </div>

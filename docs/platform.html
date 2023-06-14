@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230613231426">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230614223940">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,7 +34,7 @@
 							<picture><source srcset="img/home/flag-ua.webp" type="image/webp"><img src="img/home/flag-ua.png" alt="flag"></picture>
 						</a>
 						<div class="header__buttons">
-							<a href="#" class="header__btn header__btn_chanel btn">Додати канал</a>
+							<a href="#" data-popup="#chanel" class="header__btn header__btn_chanel btn">Додати канал</a>
 							<a href="#" class="header__btn btn">Заповнити бріф</a>
 						</div>
 					</div>
@@ -62,7 +62,7 @@
 								<li class="item-tariff-txt__txt">Редактура та оптимізація тексту</li>
 							</ul>
 						</div>
-						<div data-da=".tariff__wrapper-mob,730,0" class="tariff__item item-tariff">
+						<div data-da=".tariff__mob-body,730,0" class="tariff__item item-tariff">
 							<div class="item-tariff__head">
 								<div class="item-tariff__head-top">
 									<p class="item-tariff__title">Початковий</p>
@@ -71,15 +71,15 @@
 								<a href="#" class="item-tariff__btn">Зв’язатися</a>
 							</div>
 							<div class="item-tariff__body">
-								<picture><source srcset="img/platform/ok-blue.webp" type="image/webp"><img class="item-tariff__img" src="img/platform/ok-blue.png" alt="img"></picture>
-								<picture><source srcset="img/platform/ok-blue.webp" type="image/webp"><img class="item-tariff__img" src="img/platform/ok-blue.png" alt="img"></picture>
-								<picture><source srcset="img/platform/ok-blue.webp" type="image/webp"><img class="item-tariff__img" src="img/platform/ok-blue.png" alt="img"></picture>
-								<picture><source srcset="img/platform/x-gray.webp" type="image/webp"><img class="item-tariff__img" src="img/platform/x-gray.png" alt="img"></picture>
-								<picture><source srcset="img/platform/x-gray.webp" type="image/webp"><img class="item-tariff__img" src="img/platform/x-gray.png" alt="img"></picture>
-								<picture><source srcset="img/platform/x-gray.webp" type="image/webp"><img class="item-tariff__img" src="img/platform/x-gray.png" alt="img"></picture>
+								<img class="item-tariff__img" src="img/platform/ok-blue.svg" alt="img">
+								<img class="item-tariff__img" src="img/platform/ok-blue.svg" alt="img">
+								<img class="item-tariff__img" src="img/platform/ok-blue.svg" alt="img">
+								<img class="item-tariff__img" src="img/platform/x-gray.svg" alt="img">
+								<img class="item-tariff__img" src="img/platform/x-gray.svg" alt="img">
+								<img class="item-tariff__img" src="img/platform/x-gray.svg" alt="img">
 							</div>
 						</div>
-						<div data-da=".tariff__wrapper-mob,730,1" class="tariff__item item-tariff">
+						<div data-da=".tariff__mob-body,730,1" class="tariff__item item-tariff">
 							<div class="item-tariff__head">
 								<div class="item-tariff__head-top">
 									<p class="item-tariff__title">Стандартний</p>
@@ -88,15 +88,15 @@
 								<a href="#" class="item-tariff__btn">Зв’язатися</a>
 							</div>
 							<div class="item-tariff__body">
-								<picture><source srcset="img/platform/ok-white.webp" type="image/webp"><img class="item-tariff__img" src="img/platform/ok-white.png" alt="img"></picture>
-								<picture><source srcset="img/platform/ok-white.webp" type="image/webp"><img class="item-tariff__img" src="img/platform/ok-white.png" alt="img"></picture>
-								<picture><source srcset="img/platform/ok-white.webp" type="image/webp"><img class="item-tariff__img" src="img/platform/ok-white.png" alt="img"></picture>
-								<picture><source srcset="img/platform/ok-white.webp" type="image/webp"><img class="item-tariff__img" src="img/platform/ok-white.png" alt="img"></picture>
-								<picture><source srcset="img/platform/ok-white.webp" type="image/webp"><img class="item-tariff__img" src="img/platform/ok-white.png" alt="img"></picture>
-								<picture><source srcset="img/platform/x-light-blue.webp" type="image/webp"><img class="item-tariff__img" src="img/platform/x-light-blue.png" alt="img"></picture>
+								<img class="item-tariff__img" src="img/platform/ok-white.svg" alt="img">
+								<img class="item-tariff__img" src="img/platform/ok-white.svg" alt="img">
+								<img class="item-tariff__img" src="img/platform/ok-white.svg" alt="img">
+								<img class="item-tariff__img" src="img/platform/ok-white.svg" alt="img">
+								<img class="item-tariff__img" src="img/platform/ok-white.svg" alt="img">
+								<img class="item-tariff__img" src="img/platform/x-light-blue.svg" alt="img">
 							</div>
 						</div>
-						<div data-da=".tariff__wrapper-mob,730,3" class="tariff__item item-tariff">
+						<div data-da=".tariff__mob-body,730,3" class="tariff__item item-tariff">
 							<div class="item-tariff__head">
 								<div class="item-tariff__head-top">
 									<p class="item-tariff__title">Професійний</p>
@@ -105,15 +105,484 @@
 								<a href="#" class="item-tariff__btn">Зв’язатися</a>
 							</div>
 							<div class="item-tariff__body">
-								<picture><source srcset="img/platform/ok-blue.webp" type="image/webp"><img class="item-tariff__img" src="img/platform/ok-blue.png" alt="img"></picture>
-								<picture><source srcset="img/platform/ok-blue.webp" type="image/webp"><img class="item-tariff__img" src="img/platform/ok-blue.png" alt="img"></picture>
-								<picture><source srcset="img/platform/ok-blue.webp" type="image/webp"><img class="item-tariff__img" src="img/platform/ok-blue.png" alt="img"></picture>
-								<picture><source srcset="img/platform/ok-blue.webp" type="image/webp"><img class="item-tariff__img" src="img/platform/ok-blue.png" alt="img"></picture>
-								<picture><source srcset="img/platform/ok-blue.webp" type="image/webp"><img class="item-tariff__img" src="img/platform/ok-blue.png" alt="img"></picture>
-								<picture><source srcset="img/platform/ok-blue.webp" type="image/webp"><img class="item-tariff__img" src="img/platform/ok-blue.png" alt="img"></picture>
+								<img class="item-tariff__img" src="img/platform/ok-blue.svg" alt="img">
+								<img class="item-tariff__img" src="img/platform/ok-blue.svg" alt="img">
+								<img class="item-tariff__img" src="img/platform/ok-blue.svg" alt="img">
+								<img class="item-tariff__img" src="img/platform/ok-blue.svg" alt="img">
+								<img class="item-tariff__img" src="img/platform/ok-blue.svg" alt="img">
+								<img class="item-tariff__img" src="img/platform/ok-blue.svg" alt="img">
 							</div>
 						</div>
-						<div class="tariff__wrapper-mob"></div>
+						<div data-simplebar class="tariff__mob-wrapper">
+							<div class="tariff__mob-body">
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<img class="tariff__img-bg" src="img/platform/tg-icon-2.svg" alt="img">
+			</section>
+			<section class="rating">
+				<div class="rating__container">
+					<h2 class="rating__title">Рейтинг Telegram-каналів</h2>
+					<div class="rating__filters filter">
+						<div class="filter__item">
+							<div class="filter__name">Підписників</div>
+							<select name="form[]" data-scroll data-one-select data-class-modif="form">
+								<option value="1" selected>від 1 млн</option>
+								<option value="2">100 - 200 тис</option>
+								<option value="3">200 - 500 тис</option>
+								<option value="4">500 тис - 1 млн</option>
+							</select>
+							<div class="filter__img">
+								<img src="img/platform/arrow.svg" alt="arrow">
+							</div>
+						</div>
+						<div class="filter__item">
+							<div class="filter__name">Ціна</div>
+							<select name="form[]" data-scroll data-one-select data-class-modif="form">
+								<option value="1" selected>$50 - $200</option>
+								<option value="2">$200 - $500</option>
+								<option value="3">$500 - $1000</option>
+								<option value="4">від $2000</option>
+							</select>
+							<div class="filter__img">
+								<img src="img/platform/arrow.svg" alt="arrow">
+							</div>
+						</div>
+						<div class="filter__item">
+							<select name="form[]" data-scroll data-one-select data-class-modif="form">
+								<option value="1" selected>Всі категорії</option>
+								<option value="2">Новини і ЗМІ</option>
+								<option value="3">Технології</option>
+								<option value="4">Гумор та розваги</option>
+								<option value="5">Криптовалюти</option>
+								<option value="6">Політика</option>
+								<option value="7">Маркетинг, PR</option>
+								<option value="8">Маркетинг, PR</option>
+								<option value="9">Маркетинг, PR</option>
+								<option value="10">Маркетинг, PR</option>
+								<option value="11">Маркетинг, PR</option>
+							</select>
+							<div class="filter__img">
+								<img src="img/platform/arrow.svg" alt="arrow">
+							</div>
+						</div>
+					</div>
+					<div class="rating__chanels chanels">
+						<div class="chanels__titles">
+							<div class="chanels__title">Назва каналу</div>
+							<div class="chanels__title">Категорія</div>
+							<div class="chanels__title">Підписники</div>
+							<div class="chanels__title">Перегляди (за 24 г)</div>
+							<div class="chanels__title">ER (за 24 г)</div>
+							<div class="chanels__title">Вартість розміщення</div>
+						</div>
+						<div class="chanels__body">
+							<ul class="chanels__list">
+								<li class="chanels__item item-chanel">
+									<div class="item-chanel__head">
+										<div class="item-chanel__numb">1</div>
+										<div class="item-chanel__img">
+											<img src="img/chanels/chanel (22).png" alt="img">
+										</div>
+										<div class="item-chanel__sub-head">
+											<div class="item-chanel__title">Труха⚡️Украина</div>
+											<div class="item-chanel__subtitle">@tgsn_ua</div>
+										</div>
+									</div>
+									<div class="item-chanel__info item-chanel__info_none">Новини і ЗМІ</div>
+									<div class="item-chanel__info item-chanel__info_none">1.23m</div>
+									<div class="item-chanel__info item-chanel__info_none">~ 358.6k</div>
+									<div class="item-chanel__info item-chanel__info_none">35.55%</div>
+									<div class="item-chanel__info item-chanel__info_none">від $150</div>
+									<div class="item-chanel__body">
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">Категорія</div>
+											<div class="item-chanel__info">Новини і ЗМІ</div>
+										</div>
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">Підписники</div>
+											<div class="item-chanel__info">1.23m</div>
+										</div>
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">Перегляди (за 24 г)</div>
+											<div class="item-chanel__info">~ 358.6k</div>
+										</div>
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">ER (за 24 г)</div>
+											<div class="item-chanel__info">35.55%</div>
+										</div>
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">Вартість розміщення</div>
+											<div class="item-chanel__info">від $150</div>
+										</div>
+									</div>
+									<a href="#" class="item-chanel__btn">Зв'язатися з нами</a>
+								</li>
+								<li class="chanels__item item-chanel">
+									<div class="item-chanel__head">
+										<div class="item-chanel__numb">2</div>
+										<div class="item-chanel__img">
+											<img src="img/chanels/chanel (23).png" alt="img">
+										</div>
+										<div class="item-chanel__sub-head">
+											<div class="item-chanel__title">Мир сегодня с "Юрий По...</div>
+											<div class="item-chanel__subtitle">@tgsn_ua</div>
+										</div>
+									</div>
+									<div class="item-chanel__info item-chanel__info_none">Технології</div>
+									<div class="item-chanel__info item-chanel__info_none">1.23m</div>
+									<div class="item-chanel__info item-chanel__info_none">~ 358.6k</div>
+									<div class="item-chanel__info item-chanel__info_none">35.55%</div>
+									<div class="item-chanel__info item-chanel__info_none">від $150</div>
+									<div class="item-chanel__body">
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">Категорія</div>
+											<div class="item-chanel__info">Технології</div>
+										</div>
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">Підписники</div>
+											<div class="item-chanel__info">1.23m</div>
+										</div>
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">Перегляди (за 24 г)</div>
+											<div class="item-chanel__info">~ 358.6k</div>
+										</div>
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">ER (за 24 г)</div>
+											<div class="item-chanel__info">35.55%</div>
+										</div>
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">Вартість розміщення</div>
+											<div class="item-chanel__info">від $150</div>
+										</div>
+									</div>
+									<a href="#" class="item-chanel__btn">Зв'язатися з нами</a>
+								</li>
+								<li class="chanels__item item-chanel">
+									<div class="item-chanel__head">
+										<div class="item-chanel__numb">3</div>
+										<div class="item-chanel__img">
+											<img src="img/chanels/chanel (1).png" alt="img">
+										</div>
+										<div class="item-chanel__sub-head">
+											<div class="item-chanel__title">Украина Сейчас: новости, война, Россия</div>
+											<div class="item-chanel__subtitle">@tgsn_ua</div>
+										</div>
+									</div>
+									<div class="item-chanel__info item-chanel__info_none">Новини і ЗМІ</div>
+									<div class="item-chanel__info item-chanel__info_none">1.23m</div>
+									<div class="item-chanel__info item-chanel__info_none">~ 358.6k</div>
+									<div class="item-chanel__info item-chanel__info_none">35.55%</div>
+									<div class="item-chanel__info item-chanel__info_none">від $150</div>
+									<div class="item-chanel__body">
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">Категорія</div>
+											<div class="item-chanel__info">Новини і ЗМІ</div>
+										</div>
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">Підписники</div>
+											<div class="item-chanel__info">1.23m</div>
+										</div>
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">Перегляди (за 24 г)</div>
+											<div class="item-chanel__info">~ 358.6k</div>
+										</div>
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">ER (за 24 г)</div>
+											<div class="item-chanel__info">35.55%</div>
+										</div>
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">Вартість розміщення</div>
+											<div class="item-chanel__info">від $150</div>
+										</div>
+									</div>
+									<a href="#" class="item-chanel__btn">Зв'язатися з нами</a>
+								</li>
+								<li class="chanels__item item-chanel">
+									<div class="item-chanel__head">
+										<div class="item-chanel__numb">4</div>
+										<div class="item-chanel__img">
+											<img src="img/chanels/chanel (8).png" alt="img">
+										</div>
+										<div class="item-chanel__sub-head">
+											<div class="item-chanel__title">Инсайдер UAя</div>
+											<div class="item-chanel__subtitle">@tgsn_ua</div>
+										</div>
+									</div>
+									<div class="item-chanel__info item-chanel__info_none">Економіка</div>
+									<div class="item-chanel__info item-chanel__info_none">1.23m</div>
+									<div class="item-chanel__info item-chanel__info_none">~ 358.6k</div>
+									<div class="item-chanel__info item-chanel__info_none">35.55%</div>
+									<div class="item-chanel__info item-chanel__info_none">від $150</div>
+									<div class="item-chanel__body">
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">Категорія</div>
+											<div class="item-chanel__info">Економіка</div>
+										</div>
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">Підписники</div>
+											<div class="item-chanel__info">1.23m</div>
+										</div>
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">Перегляди (за 24 г)</div>
+											<div class="item-chanel__info">~ 358.6k</div>
+										</div>
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">ER (за 24 г)</div>
+											<div class="item-chanel__info">35.55%</div>
+										</div>
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">Вартість розміщення</div>
+											<div class="item-chanel__info">від $150</div>
+										</div>
+									</div>
+									<a href="#" class="item-chanel__btn">Зв'язатися з нами</a>
+								</li>
+								<li class="chanels__item item-chanel">
+									<div class="item-chanel__head">
+										<div class="item-chanel__numb">5</div>
+										<div class="item-chanel__img">
+											<img src="img/chanels/chanel (24).png" alt="img">
+										</div>
+										<div class="item-chanel__sub-head">
+											<div class="item-chanel__title">Украина Online</div>
+											<div class="item-chanel__subtitle">@tgsn_ua</div>
+										</div>
+									</div>
+									<div class="item-chanel__info item-chanel__info_none">Гумор та розваги</div>
+									<div class="item-chanel__info item-chanel__info_none">1.23m</div>
+									<div class="item-chanel__info item-chanel__info_none">~ 358.6k</div>
+									<div class="item-chanel__info item-chanel__info_none">35.55%</div>
+									<div class="item-chanel__info item-chanel__info_none">від $150</div>
+									<div class="item-chanel__body">
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">Категорія</div>
+											<div class="item-chanel__info">Гумор та розваги</div>
+										</div>
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">Підписники</div>
+											<div class="item-chanel__info">1.23m</div>
+										</div>
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">Перегляди (за 24 г)</div>
+											<div class="item-chanel__info">~ 358.6k</div>
+										</div>
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">ER (за 24 г)</div>
+											<div class="item-chanel__info">35.55%</div>
+										</div>
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">Вартість розміщення</div>
+											<div class="item-chanel__info">від $150</div>
+										</div>
+									</div>
+									<a href="#" class="item-chanel__btn">Зв'язатися з нами</a>
+								</li>
+								<li class="chanels__item item-chanel">
+									<div class="item-chanel__head">
+										<div class="item-chanel__numb">6</div>
+										<div class="item-chanel__img">
+											<img src="img/chanels/chanel (22).png" alt="img">
+										</div>
+										<div class="item-chanel__sub-head">
+											<div class="item-chanel__title">Труха⚡️Украина</div>
+											<div class="item-chanel__subtitle">@tgsn_ua</div>
+										</div>
+									</div>
+									<div class="item-chanel__info item-chanel__info_none">Новини і ЗМІ</div>
+									<div class="item-chanel__info item-chanel__info_none">1.23m</div>
+									<div class="item-chanel__info item-chanel__info_none">~ 358.6k</div>
+									<div class="item-chanel__info item-chanel__info_none">35.55%</div>
+									<div class="item-chanel__info item-chanel__info_none">від $150</div>
+									<div class="item-chanel__body">
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">Категорія</div>
+											<div class="item-chanel__info">Новини і ЗМІ</div>
+										</div>
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">Підписники</div>
+											<div class="item-chanel__info">1.23m</div>
+										</div>
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">Перегляди (за 24 г)</div>
+											<div class="item-chanel__info">~ 358.6k</div>
+										</div>
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">ER (за 24 г)</div>
+											<div class="item-chanel__info">35.55%</div>
+										</div>
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">Вартість розміщення</div>
+											<div class="item-chanel__info">від $150</div>
+										</div>
+									</div>
+									<a href="#" class="item-chanel__btn">Зв'язатися з нами</a>
+								</li>
+								<li class="chanels__item item-chanel">
+									<div class="item-chanel__head">
+										<div class="item-chanel__numb">7</div>
+										<div class="item-chanel__img">
+											<img src="img/chanels/chanel (23).png" alt="img">
+										</div>
+										<div class="item-chanel__sub-head">
+											<div class="item-chanel__title">Мир сегодня с "Юрий По...</div>
+											<div class="item-chanel__subtitle">@tgsn_ua</div>
+										</div>
+									</div>
+									<div class="item-chanel__info item-chanel__info_none">Технології</div>
+									<div class="item-chanel__info item-chanel__info_none">1.23m</div>
+									<div class="item-chanel__info item-chanel__info_none">~ 358.6k</div>
+									<div class="item-chanel__info item-chanel__info_none">35.55%</div>
+									<div class="item-chanel__info item-chanel__info_none">від $150</div>
+									<div class="item-chanel__body">
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">Категорія</div>
+											<div class="item-chanel__info">Технології</div>
+										</div>
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">Підписники</div>
+											<div class="item-chanel__info">1.23m</div>
+										</div>
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">Перегляди (за 24 г)</div>
+											<div class="item-chanel__info">~ 358.6k</div>
+										</div>
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">ER (за 24 г)</div>
+											<div class="item-chanel__info">35.55%</div>
+										</div>
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">Вартість розміщення</div>
+											<div class="item-chanel__info">від $150</div>
+										</div>
+									</div>
+									<a href="#" class="item-chanel__btn">Зв'язатися з нами</a>
+								</li>
+								<li class="chanels__item item-chanel">
+									<div class="item-chanel__head">
+										<div class="item-chanel__numb">8</div>
+										<div class="item-chanel__img">
+											<img src="img/chanels/chanel (1).png" alt="img">
+										</div>
+										<div class="item-chanel__sub-head">
+											<div class="item-chanel__title">Украина Сейчас: новости, война, Россия</div>
+											<div class="item-chanel__subtitle">@tgsn_ua</div>
+										</div>
+									</div>
+									<div class="item-chanel__info item-chanel__info_none">Новини і ЗМІ</div>
+									<div class="item-chanel__info item-chanel__info_none">1.23m</div>
+									<div class="item-chanel__info item-chanel__info_none">~ 358.6k</div>
+									<div class="item-chanel__info item-chanel__info_none">35.55%</div>
+									<div class="item-chanel__info item-chanel__info_none">від $150</div>
+									<div class="item-chanel__body">
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">Категорія</div>
+											<div class="item-chanel__info">Новини і ЗМІ</div>
+										</div>
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">Підписники</div>
+											<div class="item-chanel__info">1.23m</div>
+										</div>
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">Перегляди (за 24 г)</div>
+											<div class="item-chanel__info">~ 358.6k</div>
+										</div>
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">ER (за 24 г)</div>
+											<div class="item-chanel__info">35.55%</div>
+										</div>
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">Вартість розміщення</div>
+											<div class="item-chanel__info">від $150</div>
+										</div>
+									</div>
+									<a href="#" class="item-chanel__btn">Зв'язатися з нами</a>
+								</li>
+								<li class="chanels__item item-chanel">
+									<div class="item-chanel__head">
+										<div class="item-chanel__numb">9</div>
+										<div class="item-chanel__img">
+											<img src="img/chanels/chanel (8).png" alt="img">
+										</div>
+										<div class="item-chanel__sub-head">
+											<div class="item-chanel__title">Инсайдер UAя</div>
+											<div class="item-chanel__subtitle">@tgsn_ua</div>
+										</div>
+									</div>
+									<div class="item-chanel__info item-chanel__info_none">Економіка</div>
+									<div class="item-chanel__info item-chanel__info_none">1.23m</div>
+									<div class="item-chanel__info item-chanel__info_none">~ 358.6k</div>
+									<div class="item-chanel__info item-chanel__info_none">35.55%</div>
+									<div class="item-chanel__info item-chanel__info_none">від $150</div>
+									<div class="item-chanel__body">
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">Категорія</div>
+											<div class="item-chanel__info">Економіка</div>
+										</div>
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">Підписники</div>
+											<div class="item-chanel__info">1.23m</div>
+										</div>
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">Перегляди (за 24 г)</div>
+											<div class="item-chanel__info">~ 358.6k</div>
+										</div>
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">ER (за 24 г)</div>
+											<div class="item-chanel__info">35.55%</div>
+										</div>
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">Вартість розміщення</div>
+											<div class="item-chanel__info">від $150</div>
+										</div>
+									</div>
+									<a href="#" class="item-chanel__btn">Зв'язатися з нами</a>
+								</li>
+								<li class="chanels__item item-chanel">
+									<div class="item-chanel__head">
+										<div class="item-chanel__numb">10</div>
+										<div class="item-chanel__img">
+											<img src="img/chanels/chanel (24).png" alt="img">
+										</div>
+										<div class="item-chanel__sub-head">
+											<div class="item-chanel__title">Украина Online</div>
+											<div class="item-chanel__subtitle">@tgsn_ua</div>
+										</div>
+									</div>
+									<div class="item-chanel__info item-chanel__info_none">Гумор та розваги</div>
+									<div class="item-chanel__info item-chanel__info_none">1.23m</div>
+									<div class="item-chanel__info item-chanel__info_none">~ 358.6k</div>
+									<div class="item-chanel__info item-chanel__info_none">35.55%</div>
+									<div class="item-chanel__info item-chanel__info_none">від $150</div>
+									<div class="item-chanel__body">
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">Категорія</div>
+											<div class="item-chanel__info">Гумор та розваги</div>
+										</div>
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">Підписники</div>
+											<div class="item-chanel__info">1.23m</div>
+										</div>
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">Перегляди (за 24 г)</div>
+											<div class="item-chanel__info">~ 358.6k</div>
+										</div>
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">ER (за 24 г)</div>
+											<div class="item-chanel__info">35.55%</div>
+										</div>
+										<div class="item-chanel__block">
+											<div class="item-chanel__category">Вартість розміщення</div>
+											<div class="item-chanel__info">від $150</div>
+										</div>
+									</div>
+									<a href="#" class="item-chanel__btn">Зв'язатися з нами</a>
+								</li>
+
+							</ul>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -140,7 +609,7 @@
 					</ul>
 				</nav>
 				<div class="footer__block">
-					<a href="#" class="footer__btn btn">Додати канал</a>
+					<a href="#" data-popup="#chanel" class="footer__btn btn">Додати канал</a>
 					<a href="#" class="footer__btn btn">Заповнити бріф</a>
 					<a href="#" class="footer__lang">
 						<picture><source srcset="img/home/flag-ua.webp" type="image/webp"><img src="img/home/flag-ua.png" alt="flag"></picture>
@@ -150,17 +619,48 @@
 			</div>
 		</footer>
 	</div>
-	<div id="popup" aria-hidden="true" class="popup">
+	<div id="chanel" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
 			<div class="popup__content">
-				<button data-close type="button" class="popup__close">Закрити</button>
-				<div class="popup__text">
-					Text
-				</div>
+				<h3 class="popup__title">Додати канал</h3>
+				<p class="popup__sub-title">Якщо ви не знайшли свій канал на сайті — скористайтесь формою, щоб додати його</p>
+				<form data-dev data-popup-message="#form-message" action="#" method="POST" class="form">
+					<input type="text" name="form[]" placeholder="Посилання на канал" class="form__input input" data-placeholder-nohide required>
+					<div class="form__select">
+						<div class="form__select-nam">Категорія каналу</div>
+						<select name="form[category]" data-class-modif="form" data-scroll>
+							<option value="1" selected></option>
+							<option value="2">Новини і ЗМІ</option>
+							<option value="3">Технології</option>
+							<option value="4">Економіка</option>
+							<option value="5">Гумор та розваги</option>
+							<option value="6">Криптовалюти</option>
+							<option value="7">Політика</option>
+							<option value="8">Маркетинг, PR</option>
+						</select>
+						<img class="form__select-img" src="img/platform/arrow-gray.svg" alt="arrow">
+					</div>
+					<div class="form__item">
+						<label for="formContact" class="form__lable">Вкажіть ваш контакт в Telegram</label>
+						<input id="formContact" type="text" name="form[]" placeholder="@your_contact" class="form__input input" data-placeholder-nohide required>
+					</div>
+					<button type="submit" class="form__button">Send</button>
+				</form>
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230613231426"></script>
+
+	<div id="form-message" aria-hidden="true" class="popup popup-massage">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<img class="popup__img" src="img/home/hand-ok.svg" alt="img">
+				<h3 class="popup__title">Канал відправлено<br> на модерацію</h3>
+				<p class="popup__sub-title">Якщо ви не знайшли свій канал на сайті — скористайтесь формою, щоб додати його</p>
+				<a href="index.html" class="form__button">Повернутися на головну (5)</a>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230614223940"></script>
 </body>
 
 </html>
