@@ -1307,8 +1307,8 @@ textarea {
 .chanels__titles {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto (12%)[5];
-  grid-template-columns: auto repeat(5, 12%);
+  -ms-grid-columns: 24% (minmax(auto, 12%))[5];
+  grid-template-columns: 24% repeat(5, minmax(auto, 12%));
   -webkit-column-gap: 2rem;
      -moz-column-gap: 2rem;
           column-gap: 2rem;
@@ -2257,8 +2257,8 @@ textarea {
   }
 
   .item-chanel {
-    -ms-grid-columns: auto;
-    grid-template-columns: auto;
+    -ms-grid-columns: 100% !important;
+    grid-template-columns: 100% !important;
   }
 
   .item-chanel__title {
@@ -2266,8 +2266,8 @@ textarea {
   }
 
   .item-chanel__body {
-    -ms-grid-columns: 40% (1fr)[2];
-    grid-template-columns: 40% repeat(2, 1fr);
+    -ms-grid-columns: 40% (1fr)[2] !important;
+    grid-template-columns: 40% repeat(2, 1fr) !important;
   }
 
   .item-chanel__btn {
@@ -2787,7 +2787,7 @@ textarea {
   }
 
   .item-chanel__title {
-    width: 18.75rem;
+    width: 18.6875rem;
   }
 }
 
@@ -3588,15 +3588,15 @@ textarea {
 }
 
 @media (min-width: 22.5em) and (max-width: 30em) {
-@supports (width: clamp( 18.75rem , 18.75rem  +  0vw , 18.75rem )) {
+@supports (width: clamp( 18.6875rem , 18.5rem  +  0.8333333333vw , 18.75rem )) {
     .item-chanel__title {
-      width: clamp( 18.75rem , 18.75rem  +  0vw , 18.75rem );
+      width: clamp( 18.6875rem , 18.5rem  +  0.8333333333vw , 18.75rem );
     }
 }
 
-@supports not (width: clamp( 18.75rem , 18.75rem  +  0vw , 18.75rem )) {
+@supports not (width: clamp( 18.6875rem , 18.5rem  +  0.8333333333vw , 18.75rem )) {
     .item-chanel__title {
-      width: calc(18.75rem + 0 * (100vw - 22.5rem) / 7.5);
+      width: calc(18.6875rem + 0.0625 * (100vw - 22.5rem) / 7.5);
     }
 }
 }

@@ -577,7 +577,7 @@
   // .chanels__titles
   &__titles {
     display: grid;
-    grid-template-columns: auto repeat(5, 12%);
+    grid-template-columns: 24% repeat(5, minmax(auto, 12%));
     column-gap: rem(32);
     margin-bottom: rem(16);
     padding: 0 rem(24) 0 rem(12);
@@ -702,8 +702,10 @@
       grid-template-columns: 50% 50%;
       gap: rem(16);
   }
-  @media (max-width:$mobileSmall){
-     grid-template-columns: auto; 
+  @media (max-width: em(480)){
+     grid-template-columns: 100% !important; 
+    //  display: flex;
+    //  flex-direction: column;
   }
   // .item-chanel__head
   &__head {
@@ -756,7 +758,7 @@
     // max-width: rem(200);
     @include adaptiveValue("width", 200, 90, 0, 1300, 700);
     @include adaptiveValue("width", 180, 100, 3, 700, 480);
-    @include adaptiveValue("width", 300, 300, 3, 480, 360 );
+    @include adaptiveValue("width", 300, 299, 3, 480, 360 );
     
     transition: all .3s;
     @media (max-width: em(700)){
@@ -785,7 +787,7 @@
       grid-template-columns: repeat(2, 1fr);
     }
     @media (max-width:$mobileSmall){
-      grid-template-columns: 40% repeat(2, 1fr);
+      grid-template-columns: 40% repeat(2, 1fr) !important;
     }
   }
   // .item-chanel__block
